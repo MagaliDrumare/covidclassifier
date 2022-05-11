@@ -33,7 +33,7 @@ else:
     imageI = Image.open(file)
     prediction = import_and_predict(imageI, model)
     pred = prediction[0][0]
-    if(pred > 0.5):
+    if(pred > 0.8):
         st.write("""
                  ## **Prediction:** You don't have the covid. Great!!
                  """
